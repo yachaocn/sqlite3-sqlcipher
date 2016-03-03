@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6796FD111C86E0B900173ADC /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6796FD0B1C86DD6E00173ADC /* libsqlcipher.a */; };
 		67D546851C8584E300AAD1CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D546841C8584E300AAD1CC /* main.m */; };
 		67D546881C8584E300AAD1CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D546871C8584E300AAD1CC /* AppDelegate.m */; };
 		67D5468B1C8584E300AAD1CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D5468A1C8584E300AAD1CC /* ViewController.m */; };
@@ -15,9 +16,29 @@
 		67D546931C8584E300AAD1CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D546911C8584E300AAD1CC /* LaunchScreen.storyboard */; };
 		67D5469E1C8584E300AAD1CC /* Sqlit3_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D5469D1C8584E300AAD1CC /* Sqlit3_____Tests.m */; };
 		67D546A91C8584E300AAD1CC /* Sqlit3_____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D546A81C8584E300AAD1CC /* Sqlit3_____UITests.m */; };
+		67D546C31C85991600AAD1CC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D546B81C85991600AAD1CC /* FMDatabase.m */; };
+		67D546C41C85991600AAD1CC /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D546BA1C85991600AAD1CC /* FMDatabaseAdditions.m */; };
+		67D546C51C85991600AAD1CC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D546BC1C85991600AAD1CC /* FMDatabasePool.m */; };
+		67D546C61C85991600AAD1CC /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D546BE1C85991600AAD1CC /* FMDatabaseQueue.m */; };
+		67D546C71C85991600AAD1CC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D546C11C85991600AAD1CC /* FMResultSet.m */; };
+		67D546C81C85991600AAD1CC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67D546C21C85991600AAD1CC /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6796FD0A1C86DD6E00173ADC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6796FD051C86DD6E00173ADC /* sqlcipher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC046055464E500DB518D;
+			remoteInfo = sqlcipher;
+		};
+		6796FD0C1C86DDE000173ADC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6796FD051C86DD6E00173ADC /* sqlcipher.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = sqlcipher;
+		};
 		67D5469A1C8584E300AAD1CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 67D546781C8584E300AAD1CC /* Project object */;
@@ -35,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6796FD051C86DD6E00173ADC /* sqlcipher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqlcipher.xcodeproj; path = ../../sqlcipher/sqlcipher.xcodeproj; sourceTree = "<group>"; };
 		67D546801C8584E300AAD1CC /* Sqlit3附加数据库.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sqlit3附加数据库.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D546841C8584E300AAD1CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		67D546861C8584E300AAD1CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +73,18 @@
 		67D546A41C8584E300AAD1CC /* Sqlit3附加数据库UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sqlit3附加数据库UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D546A81C8584E300AAD1CC /* Sqlit3_____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Sqlit3_____UITests.m"; sourceTree = "<group>"; };
 		67D546AA1C8584E300AAD1CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67D546B71C85991600AAD1CC /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		67D546B81C85991600AAD1CC /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		67D546B91C85991600AAD1CC /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		67D546BA1C85991600AAD1CC /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		67D546BB1C85991600AAD1CC /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		67D546BC1C85991600AAD1CC /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		67D546BD1C85991600AAD1CC /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		67D546BE1C85991600AAD1CC /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		67D546BF1C85991600AAD1CC /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		67D546C01C85991600AAD1CC /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		67D546C11C85991600AAD1CC /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		67D546C21C85991600AAD1CC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6796FD111C86E0B900173ADC /* libsqlcipher.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +113,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6796FD061C86DD6E00173ADC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6796FD0B1C86DD6E00173ADC /* libsqlcipher.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		67D546771C8584E300AAD1CC = {
 			isa = PBXGroup;
 			children = (
+				6796FD051C86DD6E00173ADC /* sqlcipher.xcodeproj */,
+				67D546B61C85991600AAD1CC /* fmdb */,
 				67D546821C8584E300AAD1CC /* Sqlit3附加数据库 */,
 				67D5469C1C8584E300AAD1CC /* Sqlit3附加数据库Tests */,
 				67D546A71C8584E300AAD1CC /* Sqlit3附加数据库UITests */,
@@ -140,6 +185,25 @@
 			path = "Sqlit3附加数据库UITests";
 			sourceTree = "<group>";
 		};
+		67D546B61C85991600AAD1CC /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				67D546B71C85991600AAD1CC /* FMDatabase.h */,
+				67D546B81C85991600AAD1CC /* FMDatabase.m */,
+				67D546B91C85991600AAD1CC /* FMDatabaseAdditions.h */,
+				67D546BA1C85991600AAD1CC /* FMDatabaseAdditions.m */,
+				67D546BB1C85991600AAD1CC /* FMDatabasePool.h */,
+				67D546BC1C85991600AAD1CC /* FMDatabasePool.m */,
+				67D546BD1C85991600AAD1CC /* FMDatabaseQueue.h */,
+				67D546BE1C85991600AAD1CC /* FMDatabaseQueue.m */,
+				67D546BF1C85991600AAD1CC /* FMDB.h */,
+				67D546C01C85991600AAD1CC /* FMResultSet.h */,
+				67D546C11C85991600AAD1CC /* FMResultSet.m */,
+				67D546C21C85991600AAD1CC /* Info.plist */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +218,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6796FD0D1C86DDE000173ADC /* PBXTargetDependency */,
 			);
 			name = "Sqlit3附加数据库";
 			productName = "Sqlit3附加数据库";
@@ -229,6 +294,12 @@
 			mainGroup = 67D546771C8584E300AAD1CC;
 			productRefGroup = 67D546811C8584E300AAD1CC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6796FD061C86DD6E00173ADC /* Products */;
+					ProjectRef = 6796FD051C86DD6E00173ADC /* sqlcipher.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				67D5467F1C8584E300AAD1CC /* Sqlit3附加数据库 */,
@@ -238,11 +309,22 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		6796FD0B1C86DD6E00173ADC /* libsqlcipher.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsqlcipher.a;
+			remoteRef = 6796FD0A1C86DD6E00173ADC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		67D5467E1C8584E300AAD1CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D546C81C85991600AAD1CC /* Info.plist in Resources */,
 				67D546931C8584E300AAD1CC /* LaunchScreen.storyboard in Resources */,
 				67D546901C8584E300AAD1CC /* Assets.xcassets in Resources */,
 				67D5468E1C8584E300AAD1CC /* Main.storyboard in Resources */,
@@ -271,8 +353,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				67D5468B1C8584E300AAD1CC /* ViewController.m in Sources */,
+				67D546C51C85991600AAD1CC /* FMDatabasePool.m in Sources */,
 				67D546881C8584E300AAD1CC /* AppDelegate.m in Sources */,
+				67D546C61C85991600AAD1CC /* FMDatabaseQueue.m in Sources */,
 				67D546851C8584E300AAD1CC /* main.m in Sources */,
+				67D546C31C85991600AAD1CC /* FMDatabase.m in Sources */,
+				67D546C71C85991600AAD1CC /* FMResultSet.m in Sources */,
+				67D546C41C85991600AAD1CC /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +382,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6796FD0D1C86DDE000173ADC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sqlcipher;
+			targetProxy = 6796FD0C1C86DDE000173ADC /* PBXContainerItemProxy */;
+		};
 		67D5469B1C8584E300AAD1CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 67D5467F1C8584E300AAD1CC /* Sqlit3附加数据库 */;
@@ -413,8 +505,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = ../sqlcipher/src;
 				INFOPLIST_FILE = "Sqlit3附加数据库/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "-DSQLITE_HAS_CODEC";
 				PRODUCT_BUNDLE_IDENTIFIER = "ZHC.Sqlit3-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -424,8 +518,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = ../sqlcipher/src;
 				INFOPLIST_FILE = "Sqlit3附加数据库/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "-DSQLITE_HAS_CODEC";
 				PRODUCT_BUNDLE_IDENTIFIER = "ZHC.Sqlit3-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -498,6 +594,7 @@
 				67D546AF1C8584E400AAD1CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67D546B01C8584E400AAD1CC /* Build configuration list for PBXNativeTarget "Sqlit3附加数据库Tests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +603,7 @@
 				67D546B21C8584E400AAD1CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67D546B31C8584E400AAD1CC /* Build configuration list for PBXNativeTarget "Sqlit3附加数据库UITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +612,7 @@
 				67D546B51C8584E400AAD1CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
